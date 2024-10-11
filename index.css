@@ -1,0 +1,28 @@
+body{
+    background-color: aqua;
+}
+
+#k{
+    text-align: center;
+}
+
+.m{
+    display: flex;
+    margin-top: 40px;
+}
+
+.b{
+    display: block;
+    border: 5px solid;
+    margin: auto;
+    border-radius: 40px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+}
+
+button{
+    background-color: aqua;
+    border: 0px;
+    border-radius: 8px;
+}

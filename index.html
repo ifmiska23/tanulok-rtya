@@ -4,8 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanuló Kártya</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>tanulóKártya</h1>
+    <div id="k"><h1>Tanulókártya alkalmazás</h1></div>
+    <h2 id="k">Fővárosok</h2>
+
+    <div class="m">
+        <div class="b">
+            <h2>Mi magyarország fővárosa ?</h2>
+            <p id="ki1"></p>
+            <button id="gomb1">Mutat/elrejt</button>
+        </div>
+
+        <div class="b">
+            <h2>Mi Franciaország fővárosa ?</h2>
+            <p id="ki2"></p>
+            <button id="gomb2">Mutat/elrejt</button>
+        </div>
+
+        <div class="b">
+            <h2>Mi Olaszország fővárosa ?</h2>
+            <p id="ki3"></p>
+            <button id="gomb3">Mutat/elrejt</button>
+        </div>
+    </div>
+
+    <div class="m">
+        <div class="b">
+            <h2>Mi Németország fővárosa ?</h2>
+            <p id="ki4"></p>
+            <button id="gomb4">Mutat/elrejt</button>
+        </div>
+
+        <div class="b">
+            <h2>Mi Spanyolország fővárosa ?</h2>
+            <p id="ki5"></p>
+            <button id="gomb5">Mutat/elrejt</button>
+        </div>
+
+        <div class="b">
+            <h2>Mi Ausztria fővárosa ?</h2>
+            <p id="ki6"></p>
+            <button id="gomb6">Mutat/elrejt</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('gomb1').addEventListener("click", 
+            function(){
+                let szöveg = document.getElementById('ki1');
+                if(szöveg.innerHTML === "") {
+                    szöveg.innerHTML = "Budapest"
+                }else{
+                    szöveg.innerHTML = ""
+                }
+            }
+        )
+
+        document.getElementById('gomb2').addEventListener("click", 
+            function(){
+                let szöveg = document.getElementById('ki2');
+                if(szöveg.innerHTML === "") {
+                    szöveg.innerHTML = "Párizs"
+                }else{
+                    szöveg.innerHTML = ""
+                }
+            }
+        )
+
+        document.getElementById('gomb3').addEventListener("click", 
+            function(){
+                let szöveg = document.getElementById('ki3');
+                if(szöveg.innerHTML === "") {
+                    szöveg.innerHTML = "Róma"
+                }else{
+                    szöveg.innerHTML = ""
+                }
+            }
+        )
+
+        document.getElementById('gomb4').addEventListener("click", 
+            function(){
+                let szöveg = document.getElementById('ki4');
+                if(szöveg.innerHTML === "") {
+                    szöveg.innerHTML = "Berlin"
+                }else{
+                    szöveg.innerHTML = ""
+                }
+            }
+        )
+
+        document.getElementById('gomb5').addEventListener("click", 
+            function(){
+                let szöveg = document.getElementById('ki5');
+                if(szöveg.innerHTML === "") {
+                    szöveg.innerHTML = "Madrid"
+                }else{
+                    szöveg.innerHTML = ""
+                }
+            }
+        )
+
+        document.getElementById('gomb6').addEventListener("click", 
+            function(){
+                let szöveg = document.getElementById('ki6');
+                if(szöveg.innerHTML === "") {
+                    szöveg.innerHTML = "Bécs"
+                }else{
+                    szöveg.innerHTML = ""
+                }
+            }
+        )
+    </script>
+
 </body>
 </html>
